@@ -178,6 +178,10 @@ filterName = (name) ->
   if /^titties/i.test(name)
     name = 'big_daddy'
 
+  # At this point, we might as well just add people in here when they join
+  if /^bmac/i.test(name)
+    name = 'stochastic-bombastic'
+
   return name
 
 # Make any changes required to the text
